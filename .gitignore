@@ -1,0 +1,15 @@
+node_modules
+bower_components
+.tmp
+target
+.classpath
+.project
+npm-debug.log
+.settings/
+.yo-rc.json
+bin/
+.DS_Store
+.idea
+gulpfile.js
+package.json
+*.iml

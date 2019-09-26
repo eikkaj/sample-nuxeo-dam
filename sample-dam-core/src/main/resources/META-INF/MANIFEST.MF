@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.sample.dam
+Bundle-Version: 1.0.0
+Bundle-Name: sample-dam-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.sample.dam.sample-dam-core;singleton=true
+Nuxeo-Component: OSGI-INF/operations-contrib.xml

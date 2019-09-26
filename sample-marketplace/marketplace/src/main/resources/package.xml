@@ -1,0 +1,34 @@
+<!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
+<package type="addon" name="sample-dam-marketplace"
+  version="@VERSION@">
+  <title>SampleMarketplace</title>
+  <description>
+    <p>Nuxeo Marketplace for SAMPLE DAM Application.</p>
+  </description>
+  <home-page></home-page>
+  <vendor></vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <!-- <hotreload-support>false</hotreload-support> -->
+  <!-- <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance> -->
+  <!-- Nuxeo Validation: none | inprocess | primary_validation | nuxeo_certified -->
+  <nuxeo-validation>none</nuxeo-validation>
+  <!-- Production State: production_ready | testing | proto -->
+  <production-state>testing</production-state>
+  <supported>false</supported>
+  <platforms>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-HF*</platform>
+  </platforms>
+  <!-- Dependencies on other packages -->
+  <dependencies>
+    <package>nuxeo-web-ui</package>
+    <package>nuxeo-jsf-ui</package>
+    <package>nuxeo-dam</package>
+    <package>nuxeo-csv</package>
+  </dependencies>
+  <license>Apache License, Version 2.0</license>
+  <license-url>http://www.apache.org/licenses/LICENSE-2.0</license-url>
+  <!-- Visibility: PRIVATE | MARKETPLACE | DEV | PUBLIC -->
+  <visibility>PRIVATE</visibility>
+</package>
