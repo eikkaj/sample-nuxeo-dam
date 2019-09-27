@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="com.sample.dam.core.elasticsearch">
+
+    <require>org.nuxeo.elasticsearch.ElasticSearchComponent.contrib
+    </require>
+    <extension target="org.nuxeo.elasticsearch.ElasticSearchComponent"
+               point="elasticSearchDocWriter">
+        <writer class="com.sample.dam.core.elasticsearch.AssetESDocumentWriter" />
+    </extension>
+
+</component>

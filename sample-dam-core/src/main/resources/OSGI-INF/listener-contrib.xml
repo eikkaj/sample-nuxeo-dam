@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<component name="com.sample.dam.listeners">
+
+    <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+        <listener name="UserCreationListener">
+
+            <event>userCreated</event>
+        </listener>
+        <listener name="AssetCreationListener">
+            <event>documentCreated</event>
+
+        </listener>
+    </extension>
+</component>

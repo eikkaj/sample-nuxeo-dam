@@ -1,0 +1,10 @@
+<!-- Override default suggester to search on fulltext, not title -->
+<extension point="suggesters" target="org.nuxeo.ecm.platform.suggestbox.service.SuggestionService">
+
+    <suggester class="org.nuxeo.ecm.platform.suggestbox.service.suggesters.DocumentLookupSuggester" name="documentLookupByTitle">
+        <parameters>
+            <parameter name="providerName">simple-fulltext </parameter>
+        </parameters>
+    </suggester>
+
+</extension>

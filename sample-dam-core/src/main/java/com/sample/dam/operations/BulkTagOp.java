@@ -13,7 +13,7 @@ import org.nuxeo.ecm.platform.tag.TagService;
 @Operation(id = BulkTagOp.ID, category = "sample", label = "Bulk Tag Documents", description = "Bulk Tag Documents")
 public class BulkTagOp {
 
-    public static final String ID = "sample.BulkTag";
+    public static final String ID = "Sample.BulkTag";
 
     @Param(name="tags", description="Tags to be added to the doc(s), separated by commas", required = true)
     protected StringList tags;
@@ -29,6 +29,7 @@ public class BulkTagOp {
 
         for (String tag : tags) {
             tagService.tag(session, document.getId(), tag);
+            document.setPropertyValue("asset_tags", tag);
         }
         return document;
     }

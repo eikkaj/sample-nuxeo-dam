@@ -9,7 +9,7 @@ public class AssetAdapterFactory implements DocumentAdapterFactory {
     public Object getAdapter(DocumentModel doc, Class<?> itf) {
         if ("Asset".equals(doc.getType()) && doc.hasSchema("dublincore")){
             return new AssetAdapter(doc);
-        }else{
+        } else{
             return null;
         }
     }

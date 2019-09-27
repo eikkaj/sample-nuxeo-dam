@@ -4,10 +4,10 @@ import org.nuxeo.ecm.core.api.CoreSession;
 import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.DocumentRef;
 
-/**
- *
- */
+import java.util.List;
+
 public class AssetAdapter {
+
   protected DocumentModel doc;
 
   protected String titleXpath = "dc:title";
@@ -16,14 +16,6 @@ public class AssetAdapter {
   public AssetAdapter(DocumentModel doc) {
     this.doc = doc;
   }
-
-  // Basic methods
-  //
-  // Note that we voluntarily expose only a subset of the DocumentModel API in this adapter.
-  // You may wish to complete it without exposing everything!
-  // For instance to avoid letting people change the document state using your adapter,
-  // because this would be handled through workflows / buttons / events in your application.
-  //
 
   public void save() {
     CoreSession session = doc.getCoreSession();
@@ -34,7 +26,6 @@ public class AssetAdapter {
     return doc.getParentRef();
   }
 
-  // Technical properties retrieval
   public String getId() {
     return doc.getId();
   }
@@ -66,5 +57,9 @@ public class AssetAdapter {
 
   public void setDescription(String value) {
     doc.setPropertyValue(descriptionXpath, value);
+  }
+
+  public List<String> getRelatedAssets() {
+    return (List<String>) doc.getPropertyValue("asset:related_assets");
   }
 }

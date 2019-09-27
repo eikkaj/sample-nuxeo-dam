@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="com.sample.dam.core.adapter" version="1.0">
+
+    <extension point="adapters"
+               target="org.nuxeo.ecm.core.api.DocumentAdapterService">
+
+        <adapter class="com.sample.dam.core.adapter.AssetAdapter"
+                 factory="com.sample.dam.core.adapter.AssetAdapterFactory" />w
+
+    </extension>
+
+</component>

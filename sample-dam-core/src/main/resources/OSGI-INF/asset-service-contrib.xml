@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<component name="com.sample.dam.service.AssetService"
+           version="1.0">
+
+    <implementation class="com.sample.dam.service.AssetServiceImpl" />
+
+    <service>
+        <provide interface="com.sample.dam.service.AssetService" />
+    </service>
+</component>
