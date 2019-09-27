@@ -1,7 +1,6 @@
 package com.sample.dam.operations;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.nuxeo.ecm.automation.AutomationService;
@@ -26,7 +25,6 @@ import static org.junit.Assert.assertEquals;
 @RunWith(FeaturesRunner.class)
 @Features({ AutomationFeature.class })
 @Deploy({"org.nuxeo.ecm.platform.tag", "com.sample.dam.sample-dam-core"})
-@Ignore
 public class TestBulkTagOp {
 
     @Inject

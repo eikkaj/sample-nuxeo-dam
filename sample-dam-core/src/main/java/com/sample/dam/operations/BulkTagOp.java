@@ -29,7 +29,6 @@ public class BulkTagOp {
 
         for (String tag : tags) {
             tagService.tag(session, document.getId(), tag);
-            document.setPropertyValue("asset_tags", tag);
         }
         return document;
     }

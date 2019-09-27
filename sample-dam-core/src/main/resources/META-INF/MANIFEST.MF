@@ -6,4 +6,4 @@ Bundle-Version: 1.0.0
 Bundle-Name: sample-dam-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.sample.dam.sample-dam-core;singleton=true
-Nuxeo-Component: OSGI-INF/suggest-box-contrib.xml
+Nuxeo-Component: OSGI-INF/suggest-box-contrib.xml, OSGI-INF/operations-contrib.xml
