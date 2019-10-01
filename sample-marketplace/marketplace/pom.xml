@@ -25,10 +25,10 @@
       <groupId>com.sample.dam</groupId>
       <artifactId>sample-dam-core</artifactId>
     </dependency>
-<!--     <dependency>
+    <dependency>
       <groupId>nuxeo-studio</groupId>
       <artifactId></artifactId>
-    </dependency> -->
+    </dependency>
   </dependencies>
 
   <build>

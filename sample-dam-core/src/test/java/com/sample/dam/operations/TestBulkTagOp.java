@@ -68,7 +68,7 @@ public class TestBulkTagOp {
         session.save();
 
         Map<String, Object> params = new HashMap<String, Object>();
-        params.put("tags", "nuxeo,marketing,capital_one");
+        params.put("tags", "nuxeo,marketing,sample_dam");
 
         ctx.setInput(doc.getRef());
         automationService.run(ctx, BulkTagOp.ID, params);
@@ -83,7 +83,7 @@ public class TestBulkTagOp {
         OperationContext ctx = new OperationContext(session);
 
         Map<String, Object> params = new HashMap<String, Object>();
-        params.put("tags", "nuxeo,marketing,capital_one");
+        params.put("tags", "nuxeo,marketing,sample_dam");
 
         ctx.setInput(list);
         automationService.run(ctx, BulkTagOp.ID, params);
